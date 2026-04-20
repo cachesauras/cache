@@ -2,7 +2,7 @@
 
 <img src="demon.png" alt="OpenKairos Logo" width="200" style="border-radius: 20%;" onerror="this.onerror=null; this.src='https://via.placeholder.com/200/000000/FFFFFF/?text=OpenKairos';"/>
 
-# 🌑 OpenKairos
+# OpenKairos
 
 **The Autonomous AI Daemon That Never Sleeps.**
 
