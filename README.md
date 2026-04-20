@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="demon.png" alt="OpenKairos Logo" width="600" style="border-radius: 30%;" onerror="this.onerror=null; this.src='https://via.placeholder.com/400/000000/FFFFFF/?text=OpenKairos';"/>
+<img src="demon.png" alt="OpenKairos Logo" width="650" style="border-radius: 10%;" onerror="this.onerror=null; this.src='https://via.placeholder.com/400/000000/FFFFFF/?text=OpenKairos';"/>
 
 # OpenKairos
 
