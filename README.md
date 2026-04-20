@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="demon.png" alt="OpenKairos Logo" width="200" style="border-radius: 20%;" onerror="this.onerror=null; this.src='https://via.placeholder.com/200/000000/FFFFFF/?text=OpenKairos';"/>
+<img src="demon.png" alt="OpenKairos Logo" width="400" style="border-radius: 20%;" onerror="this.onerror=null; this.src='https://via.placeholder.com/400/000000/FFFFFF/?text=OpenKairos';"/>
 
 # OpenKairos
 
@@ -22,11 +22,17 @@
 
 ---
 
+## 🌟 Why This Matters
+
+For years, developers have been constrained by the "chat interface bottleneck"—the frustrating cycle of copy-pasting code, explaining context, and waiting for an AI to reply. This reactive approach treats AI like a search engine. 
+
+**OpenKairos flips the model.** By living continuously in your operating system as a background daemon, it operates with complete **stateful permanence**. It silently observes your code changes, builds a massive contextual index of your project's architectural decisions, and acts autonomously. It transforms artificial intelligence from a *passive tool* into an *active teammate*. When you wake up, your teammate has already triaged technical debt, run security audits, and mapped out architectural diagrams. 
+
+---
+
 ## ⚡ What is OpenKairos?
 
 OpenKairos is an **autonomous background daemon** powered by AI. Unlike traditional AI coding assistants that wait idly for a prompt, OpenKairos runs 24/7. It watches your codebase, builds persistent memory about your project's architecture, flags vulnerabilities proactively, and even "dreams" to consolidate its knowledge during idle time.
-
-**It's not a chatbot. It's an autonomous teammate.**
 
 ### 🔥 Key Features
 
@@ -61,9 +67,37 @@ docker run -v $(pwd):/project -e ANTHROPIC_API_KEY=sk-... ghcr.io/openkairos/ope
 
 ---
 
-## 🏗️ Architecture: How It Works
+## 📡 Deep Audit & GitHub Webhooks
 
-OpenKairos utilizes an advanced event loop and memory architecture based on leaked "KAIROS" internals.
+OpenKairos comes with a built-in webhook server that captures GitHub push events, Pull Requests, and CI/CD Pipeline statuses. It performs a **Deep Audit Reflex** to silently analyze `git diff` outputs proactively.
+
+To connect your local daemon to GitHub using `ngrok`:
+
+```bash
+# 1. Start OpenKairos (webhooks listen on port 9876 by default)
+kairos watch
+
+# 2. Expose the webhook port to the internet
+ngrok http 9876
+```
+
+Then, add the `ngrok` URL to your GitHub repository's Webhook settings using the secret defined in your project's `config.toml`.
+
+---
+
+## 🏗️ Architecture & Technical Depth
+
+OpenKairos is engineered for stability, asynchronous execution, and persistent memory management.
+
+### Tech Stack
+
+*   **Core Engine:** Modern Python 3.9+ heavily utilizing `asyncio` and `anyio` for non-blocking asynchronous event loops.
+*   **File System Monitoring:** `watchdog` to passively trap filesystem events and generate diffs without polling overhead.
+*   **Data Validation:** `pydantic` handles rigorous schema enforcement across all LLM tool calls and state transitions.
+*   **CLI & UX:** Built with `click` and `rich`, delivering gorgeous, beautifully formatted terminal output and logs.
+*   **HTTP & Connectors:** Designed around `httpx` and `aiohttp` for hyper-fast, asynchronous API integration with LLM providers and MCP servers.
+
+### How It Works
 
 ```mermaid
 graph TD
@@ -133,18 +167,134 @@ OpenKairos auto-detects your provider based on your environment variables. No co
 | `kairos watch` | Starts the background daemon |
 | `kairos task "..."`| Assigns a persistent objective |
 | `kairos tasks` | Views currently active tasks |
+| `kairos clear-task` | Clears the currently active task |
 | `kairos brief` | Generates a project status briefing immediately |
 | `kairos status` | Displays daemon health, configuration, and state |
 | `kairos dream` | Manually forces the memory consolidation cycle |
-| `kairos doctor` | Diagnoses API keys, dependencies, and environment setup|
+| `kairos doctor` | Diagnoses API keys, dependencies, and environment setup |
+| `kairos integrate <tool>` | Installs guidelines so external AI tools (`cursor`, `claude`, `aider`) can read the daemon's subconscious |
+| `kairos mcp-server` | Starts the MCP (Model Context Protocol) JSON-RPC server over stdin/stdout |
 
 ---
 
-## 🌟 Why OpenKairos over Standard Chatbots?
+## 💡 Technical & User-Centric Use Cases
 
-Tools like standard IDE plugins or web chats rely on *ephemeral, reactive* models. Once the tab closes, the context dies. They require you to perfectly engineer a prompt every time.
+OpenKairos excels in scenarios where long-term observation, technical rigor, and zero-click background execution are critical:
 
-**OpenKairos represents stateful permanence.** Because it lives inside your environment alongside your bash terminal and git tree, it tracks the *evolution* of your project over weeks and months. You don't manage it—you coordinate with it. 
+### 1. Continuous DevSecOps Auditing
+*   **The Technical Problem:** Developers frequently commit API keys, or introduce unpatched CVEs in `package.json` / `requirements.txt` which aren't caught until CI pipeline execution. 
+*   **The OpenKairos Solution:** A background capability that parses file diffs via `watchdog` upon file save. It utilizes semantic heuristic detection combined with LLM review to flag vulnerabilities instantly, alerting the user via macOS notification *before* the commit is ever made.
+
+### 2. Autonomous Technical Debt Amortization
+*   **The Technical Problem:** `TODO`, `FIXME`, and `HACK` tags inevitably rot in codebases. Refactoring is punted due to heavy synchronous developer loads.
+*   **The OpenKairos Solution:** During its *AutoDream* cycle (when no keyboard strokes are detected for 30 minutes), the daemon asynchronously maps the relationship between existing code logic and stranded `FIXME` comments. It can automatically generate a PR or branch containing refactored, type-safe code that passes local tests without blocking the main developer's terminal. 
+
+### 3. Living, Breathing Architecture Documentation
+*   **The Technical Problem:** Architectural diagrams (`ARCHITECTURE.md`) become stale the moment they are written. New hires struggle with mapping mental models to sprawling, undocumented microservices.
+*   **The OpenKairos Solution:** The daemon acts as a passive listener to your IDE output, git history, and filesystem tree. Every night, it utilizes an embedded markdown engine and Mermaid.js to distill the project's state into a meticulously structured, dynamic knowledge graph artifact (`MEMORY.md`).
+
+### 4. Zero-Downtime Incident Response Simulator
+*   **The Technical Problem:** Standard tools require human prompt engineering to resolve failing unit tests discovered during chaotic refactors.
+*   **The OpenKairos Solution:** Running in `Task Mode`, you can assign an objective like "Upgrade all legacy asyncio syntax to Python 3.11 TaskGroups". The agent loops endlessly, executing `pytest`, parsing stack traces, mutating syntax trees (ASTs), and re-running the test framework entirely isolated—finally notifying you on Telegram when it hits 100% green coverage.
+
+---
+
+## ⚔️ OpenKairos vs OpenCrawl (OpenClaw)
+
+While **OpenCrawl** (often referred to as OpenClaw) shines as an exceptional tool for rapid, linear codebase indexing and brute-force task execution (like a highly-focused search engine bot), **OpenKairos** is orchestrated for *stateful, continuous observation* and complete autonomy.
+
+Here is a detailed comparative breakdown:
+
+| Feature Dimension | OpenCrawl (OpenClaw) 🦅 | OpenKairos 😈 |
+| :--- | :--- | :--- |
+| **Execution Paradigm** | **Synchronous / Reactive:** Fire-and-forget utility. You point it at an issue and it halts upon completion. | **Asynchronous / Proactive:** Living daemon. Sets up permanent residence, looping endlessly and evaluating independently. |
+| **State & Memory** | **Index-Based Ephemeral:** Relies on fast semantic indexing for instantaneous actions without deep historical context. | **Tri-Layer Biological:** Short-term vector logs, long-term conceptual topic files, and continuous *AutoDream* distillation. |
+| **Initiation Vector** | **Human Prompt Trigger:** Requires manual command line invocation by a developer knowing what requires fixing. | **Continuous Watcher:** Discovers architectural drift, writes code, or flags logic errors proactively before you realize they exist. |
+| **Ideal Persona** | **The Tactician:** Rapidly indexing a brand new codebase, executing a brutal one-off refactor across 50 files. | **The Architect:** A persistent co-maintainer mapping the meta-layer of your repository's evolution over months. |
+
+---
+
+## 🔌 MCP Integration — Autonomous by Design
+
+OpenKairos integrates natively with the Model Context Protocol (MCP), allowing it to connect seamlessly to external systems like calendars, email, CI pipelines, and cloud infra.
+
+Unlike typical MCP usage—where tools are invoked manually by developers via a UI—OpenKairos uses MCP **as part of its continuous decision loop**.
+
+### What this enables:
+
+- External signals are **observed automatically**
+- MCP tools are triggered **without prompts**
+- The agent acts based on **context, not commands**
+
+### Bring Your Own Connectors
+
+Any MCP-compatible connector can be plugged into the daemon:
+- 📅 Calendar (deadlines, sprint events)  
+- 📬 Email (alerts, CI notifications)  
+- 🧪 CI/CD systems  
+- ☁️ Cloud & infra tools  
+
+Once connected, they become part of the agent’s **environmental awareness layer**.
+
+---
+
+## 🧠 How It Thinks
+
+OpenKairos operates across three distinct cognitive layers without waiting for instructions:
+
+1. **Observation**
+   - Codebase changes (git diffs, filesystem saves)
+   - External signals (incoming webhooks, MCP events)
+2. **Reasoning**
+   - Correlates isolated signals into contextual narratives
+   - Prioritizes actions based on severity
+   - Generates and schedules internal tasks autonomously
+3. **Action**
+   - Modifies syntax trees and patches code
+   - Opens pull requests automatically
+   - Executes MCP tools safely
+
+---
+
+## 🧪 Example Output
+
+🔔 **Morning Briefing:**
+- 1 CI failure detected via email
+- 2 risky changes mapped in `auth` module
+- Suggested fix prepared locally in branch `kairos/fix-auth-tests`
+
+⚠️ **Alert:**
+`[CRITICAL] Failing test in auth.py:87`
+
+🤖 **Action Taken:**
+- Created branch: `kairos/fix-auth-tests`
+- Opened PR #14 with tested patch
+
+---
+
+## 🗺️ Roadmap & Future Expansion
+
+The current iteration of OpenKairos only scratches the surface of true autonomous daemon capabilities. 
+
+### Q3 - Enhancing the Subconscious
+*   **Distributed Daemon Swarms:** Launch multiple daemon instances across Kubernetes pods that communicate and partition tasks asynchronously.
+*   **Vectorized Memory Optimization:** Deep embedding search for instant recall of years worth of git history using lightweight local embedding models (e.g. `nomic-embed-text`).
+*   **Automated Subconscious "Reflexes":** Allowing the agent to learn recurring patterns and build "sub-routines" that instantly auto-correct developer typos upon save, without requiring API calls.
+
+### Q4 - Expanding Sensory Integrations
+*   **Massive MCP Server Marketplace:** Plug-and-play integrations seamlessly linking the daemon to Jira, GitHub Actions, AWS CloudWatch, and Datadog. 
+*   **Browser as a Tool:** Utilizing CDP (Chrome DevTools Protocol) so the daemon can spin up headless browser tests, visually inspect DOM renders, and assert frontend behaviors.
+*   **Voice Modality:** Integrations with native OS speech layers to read morning briefings aloud when terminal activity begins for the day.
+
+---
+
+## 🙏 Acknowledgements / Tribute
+
+This project was heavily inspired by and built with help from the following incredible tools. We'd like to express our deepest gratitude to them:
+
+*   **[oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)**
+*   **[oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)**
+*   **[oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)**
 
 ---
 
