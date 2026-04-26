@@ -61,7 +61,7 @@ OpenKairos is an **autonomous background daemon** powered by AI. Unlike traditio
 
 Get your autonomous teammate running in under 60 seconds:
 
-```bash
+``
 # 1. Install from GitHub
 pip install git+https://github.com/prabhkesar123/openkairos.git
 
@@ -70,15 +70,15 @@ export ANTHROPIC_API_KEY="sk-..."
 
 # 3. Start the daemon in your project directory
 kairos watch
-```
+
 
 *Or install from source for development:*
-```bash
+
 git clone https://github.com/prabhkesar123/openkairos.git
 cd openkairos
 pip install -e ".[dev]"
 kairos watch
-```
+
 
 ---
 
@@ -169,7 +169,7 @@ OpenKairos comes with a built-in webhook server that captures GitHub push events
 
 To connect your local daemon to GitHub using `ngrok`:
 
-```bash
+
 # 1. Start OpenKairos (webhooks listen on port 9876 by default)
 kairos watch
 
@@ -194,32 +194,32 @@ OpenKairos is engineered for stability, asynchronous execution, and persistent m
 
 ### How It Works
 
-```mermaid
 graph TD
-    subgraph Tick Engine [Every 5 min]
-        A[Wake Up] --> B[Scan Git Diffs & Working Tree]
-        B --> C[Keyword Scanner Filter]
-        C --> D{Is Action Needed?}
-        D -- Yes --> E[LLM Agent Execution Loop]
-        D -- No --> F[Sleep]
+
+    subgraph Tick_Engine
+        A[Wake Up] --> B[Scan Git Diffs]
+        B --> C[Keyword Scan]
+        C --> D{Action Needed}
+        D -->|Yes| E[Run Agent Loop]
+        D -->|No| F[Sleep]
         E --> F
     end
-    
-    subgraph AutoDream Mode [Idle > 30m]
-        G[Detect Idle State] --> H[Orient: Read Index]
-        H --> I[Gather: Parse Daily Logs]
-        I --> J[Consolidate: Distill Knowledge]
-        J --> K[Prune: Update Topic Files]
+
+    subgraph AutoDream
+        G[Detect Idle] --> H[Read Memory]
+        H --> I[Parse Logs]
+        I --> J[Consolidate Knowledge]
+        J --> K[Update Topics]
     end
 
-    subgraph 3-Layer Storage
-        L[MEMORY.md] --- M[Topic Files]
-        M --- N[JSONL Daily Logs]
+    subgraph Memory
+        L[Memory File] --> M[Topic Files]
+        M --> N[Logs]
     end
 
     E -.-> L
     K -.-> M
-```
+
 
 ---
 
