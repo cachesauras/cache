@@ -88,7 +88,7 @@ Not sure where to begin? Try these:
 
 ### 1. Fix a broken repo
 Run OpenKairos on a project with failing tests:
-```bash
+
 kairos watch
 
 ---
@@ -175,7 +175,7 @@ kairos watch
 
 # 2. Expose the webhook port to the internet
 ngrok http 9876
-```
+
 
 Then, add the `ngrok` URL to your GitHub repository's Webhook settings using the secret defined in your project's `config.toml`.
 
