@@ -111,7 +111,9 @@ kairos watch
 
 ### 🚀 Daemon Activation
 
-<img src="tele_6.png" width="300"/>
+<p align="center">
+  <img src="tele_6.png" width="280" />
+</p>
 
 - Confirms connection instantly  
 - Starts background monitoring  
@@ -121,7 +123,10 @@ kairos watch
 
 ### 🔔 Real-time Alerts
 
-<img src="tele_1.jpeg" width="260"/> <img src="tele_4.jpeg" width="260"/>
+<p align="center">
+  <img src="tele_1.jpeg" width="240" />
+  <img src="tele_4.jpeg" width="240" />
+</p>
 
 - Detects TODOs instantly  
 - Notifies on new issues in your code  
@@ -130,7 +135,9 @@ kairos watch
 
 ### 🚨 Security + Test Monitoring
 
-<img src="tele_3.jpeg" width="260"/>
+<p align="center">
+  <img src="tele_3.jpeg" width="260" />
+</p>
 
 - Flags **SQL injection vulnerabilities**  
 - Runs tests automatically  
@@ -140,7 +147,9 @@ kairos watch
 
 ### 🌅 Morning Briefings
 
-<img src="tele_2.jpeg" width="260"/>
+<p align="center">
+  <img src="tele_2.jpeg" width="260" />
+</p>
 
 - Daily summary of repo state  
 - Git activity + memory tracking  
@@ -150,7 +159,9 @@ kairos watch
 
 ### 🤖 Continuous Awareness
 
-<img src="tele_5.jpeg" width="260"/>
+<p align="center">
+  <img src="tele_5.jpeg" width="260" />
+</p>
 
 - Tracks new TODOs across commits  
 - Monitors project continuously  
@@ -158,9 +169,9 @@ kairos watch
 
 ---
 
-> No prompts.  
-> No manual checks.  
-> Just continuous awareness.
+> No prompts  
+> No manual checks  
+> Just continuous awareness  
 
 
 ## 📡 Deep Audit & GitHub Webhooks
