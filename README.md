@@ -150,7 +150,7 @@ kairos watch
 
 ### 🤖 Continuous Awareness
 
-<img src="atele_5.jpeg" width="260"/>
+<img src="tele_5.jpeg" width="260"/>
 
 - Tracks new TODOs across commits  
 - Monitors project continuously  
