@@ -8,12 +8,33 @@
 
 *An open-source, model-agnostic implementation of Anthropic's unreleased KAIROS architecture, discovered in the Claude Code source leak.*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-purple.svg?style=for-the-badge)](https://python.org)
-[![CI](https://github.com/prabhkesar123/openkairos/actions/workflows/ci.yml/badge.svg)](https://github.com/prabhkesar123/openkairos/actions)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange.svg?style=for-the-badge)](CONTRIBUTING.md)
-[![Discord](https://img.shields.io/badge/Discord-Join-7289da.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/openkairos)
-[![Star on GitHub](https://img.shields.io/github/stars/prabhkesar123/openkairos?style=for-the-badge&color=gold)](https://github.com/prabhkesar123/openkairos)
+<p align="center">
+
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-0A0A0A?style=for-the-badge&logo=opensourceinitiative&logoColor=white"/>
+  </a>
+
+  <a href="https://python.org">
+    <img src="https://img.shields.io/badge/Python-3.9+-0A0A0A?style=for-the-badge&logo=python&logoColor=yellow"/>
+  </a>
+
+  <a href="https://github.com/prabhkesar123/openkairos/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/prabhkesar123/openkairos/ci.yml?style=for-the-badge&label=CI&color=0A0A0A"/>
+  </a>
+
+  <a href="CONTRIBUTING.md">
+    <img src="https://img.shields.io/badge/PRs-Welcome-0A0A0A?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+
+  <a href="https://discord.gg/openkairos">
+    <img src="https://img.shields.io/badge/Discord-Community-0A0A0A?style=for-the-badge&logo=discord&logoColor=5865F2"/>
+  </a>
+
+  <a href="https://github.com/prabhkesar123/openkairos">
+    <img src="https://img.shields.io/github/stars/prabhkesar123/openkairos?style=for-the-badge&color=0A0A0A&logo=github"/>
+  </a>
+
+</p>
 
 <img src="demo.gif" alt="OpenKairos Demo" width="700"/>
 
