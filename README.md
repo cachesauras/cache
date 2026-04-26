@@ -21,15 +21,8 @@
 
 <br/>
 
-> 💡 **The Paradigm Shift:** We are entering a new epoch in software engineering. The era of reactive, session-bound AI assistants is ending. The age of **always-on, proactive AI daemons** has begun.
+> 💡 **The Idea:** you open your laptop. Overnight, OpenKairos caught a SQL injection, fixed 3 failing tests, and left a morning briefing in Telegram. You didn't ask it to.**
 
----
-
-## 🌟 Why This Matters
-
-For years, developers have been constrained by the "chat interface bottleneck"—the frustrating cycle of copy-pasting code, explaining context, and waiting for an AI to reply. This reactive approach treats AI like a search engine. 
-
-**OpenKairos flips the model.** By living continuously in your operating system as a background daemon, it operates with complete **stateful permanence**. It silently observes your code changes, builds a massive contextual index of your project's architectural decisions, and acts autonomously. It transforms artificial intelligence from a *passive tool* into an *active teammate*. When you wake up, your teammate has already triaged technical debt, run security audits, and mapped out architectural diagrams. 
 
 ---
 
@@ -79,6 +72,25 @@ cd openkairos
 pip install -e ".[dev]"
 kairos watch
 
+---
+
+## 📲 Live — Real Telegram Output
+
+<p align="center">
+  <img src="tele_5.jpeg" width="320"/>
+</p>
+
+> Full notification history — TODOs detected at 2AM, SQL injection flagged, tests running, morning briefing delivered. Zero prompts.
+
+<p align="center">
+  <img src="tele_3.jpeg" width="260"/>
+  <img src="tele_2.jpeg" width="260"/>
+</p>
+
+<p align="center">
+  <img src="tele_1.jpeg" width="240"/>
+  <img src="tele_4.jpeg" width="240"/>
+</p>
 
 ---
 
@@ -95,14 +107,13 @@ kairos watch
 
 ## ⚡ What It Actually Does (Real Outcomes)
 
-- ✅ Fixed **17 failing tests overnight** in a live repo
 - 📉 Reduced TODO / FIXME backlog by **32% in 24 hours**
 - 🔍 Flagged leaked API keys before commit
 - 🧠 Generated architecture summaries without prompting
 
 
 ---
-
+```
 ## 📲 Live Telegram Notifications (Real Output)
 
 > Below is unedited output from a real run.
@@ -160,8 +171,8 @@ kairos watch
 
 > No prompts  
 > No manual checks  
-> Just continuous awareness  
-
+> Just continuous awareness
+```
 
 ## 📡 Deep Audit & GitHub Webhooks
 
@@ -362,7 +373,6 @@ Unlike typical MCP usage—where tools are invoked manually by developers via a 
 
 - External signals are **observed automatically**
 - MCP tools are triggered **without prompts**
-- The agent acts based on **context, not commands**
 
 ### Bring Your Own Connectors
 
@@ -370,9 +380,7 @@ Any MCP-compatible connector can be plugged into the daemon:
 - 📅 Calendar (deadlines, sprint events)  
 - 📬 Email (alerts, CI notifications)  
 - 🧪 CI/CD systems  
-- ☁️ Cloud & infra tools  
 
-Once connected, they become part of the agent’s **environmental awareness layer**.
 
 ---
 
@@ -390,7 +398,7 @@ OpenKairos operates across three distinct cognitive layers without waiting for i
 3. **Action**
    - Modifies syntax trees and patches code
    - Opens pull requests automatically
-   - Executes MCP tools safely
+
 
 ---
 
@@ -422,7 +430,7 @@ The current iteration of OpenKairos only scratches the surface of true autonomou
 ### Q4 - Expanding Sensory Integrations
 *   **Massive MCP Server Marketplace:** Plug-and-play integrations seamlessly linking the daemon to Jira, GitHub Actions, AWS CloudWatch, and Datadog. 
 *   **Browser as a Tool:** Utilizing CDP (Chrome DevTools Protocol) so the daemon can spin up headless browser tests, visually inspect DOM renders, and assert frontend behaviors.
-*   **Voice Modality:** Integrations with native OS speech layers to read morning briefings aloud when terminal activity begins for the day.
+
 
 ---
 
