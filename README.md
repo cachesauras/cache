@@ -15,7 +15,7 @@
 [![Discord](https://img.shields.io/badge/Discord-Join-7289da.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/openkairos)
 [![Star on GitHub](https://img.shields.io/github/stars/prabhkesar123/openkairos?style=for-the-badge&color=gold)](https://github.com/prabhkesar123/openkairos)
 
-<img src="assets/demo.gif" alt="OpenKairos Demo" width="700"/>
+<img src="demo.gif" alt="OpenKairos Demo" width="700"/>
 
 </div>
 
