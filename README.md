@@ -155,17 +155,6 @@ kairos watch
 - Git activity + memory tracking  
 - Context-aware updates  
 
----
-
-### 🤖 Continuous Awareness
-
-<p align="center">
-  <img src="tele_5.jpeg" width="260" />
-</p>
-
-- Tracks new TODOs across commits  
-- Monitors project continuously  
-- Sends session + daemon updates  
 
 ---
 
