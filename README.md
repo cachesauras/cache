@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="demon.png" alt="OpenKairos Logo" width="500" style="border-radius: 10%;" onerror="this.onerror=null; this.src='https://via.placeholder.com/400/000000/FFFFFF/?text=OpenKairos';"/>
+<img src="demon.png" alt="OpenKairos Logo" width="400" style="border-radius: 20%;"/>
 
 # OpenKairos
 
@@ -10,9 +10,12 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-purple.svg?style=for-the-badge)](https://python.org)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge)](#)
+[![CI](https://github.com/prabhkesar123/openkairos/actions/workflows/ci.yml/badge.svg)](https://github.com/prabhkesar123/openkairos/actions)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange.svg?style=for-the-badge)](CONTRIBUTING.md)
-[![Star on GitHub](https://img.shields.io/github/stars/openkairos/openkairos?style=for-the-badge&color=gold)](https://github.com/openkairos/openkairos)
+[![Discord](https://img.shields.io/badge/Discord-Join-7289da.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/openkairos)
+[![Star on GitHub](https://img.shields.io/github/stars/prabhkesar123/openkairos?style=for-the-badge&color=gold)](https://github.com/prabhkesar123/openkairos)
+
+<img src="assets/demo.gif" alt="OpenKairos Demo" width="700"/>
 
 </div>
 
@@ -50,8 +53,8 @@ OpenKairos is an **autonomous background daemon** powered by AI. Unlike traditio
 Get your autonomous teammate running in under 60 seconds:
 
 ```bash
-# 1. Install via pip
-pip install openkairos
+# 1. Install from GitHub
+pip install git+https://github.com/prabhkesar123/openkairos.git
 
 # 2. Set your preferred model's API key (Anthropic used here)
 export ANTHROPIC_API_KEY="sk-..."
@@ -60,9 +63,12 @@ export ANTHROPIC_API_KEY="sk-..."
 kairos watch
 ```
 
-*Want it fully isolated? Run it in Docker:*
+*Or install from source for development:*
 ```bash
-docker run -v $(pwd):/project -e ANTHROPIC_API_KEY=sk-... ghcr.io/openkairos/openkairos watch /project
+git clone https://github.com/prabhkesar123/openkairos.git
+cd openkairos
+pip install -e ".[dev]"
+kairos watch
 ```
 
 ---
@@ -91,9 +97,8 @@ OpenKairos is engineered for stability, asynchronous execution, and persistent m
 
 ### Tech Stack
 
-*   **Core Engine:** Modern Python 3.9+ heavily utilizing `asyncio` and `anyio` for non-blocking asynchronous event loops.
+*   **Core Engine:** Modern Python 3.9+ heavily utilizing `asyncio` for non-blocking asynchronous event loops.
 *   **File System Monitoring:** `watchdog` to passively trap filesystem events and generate diffs without polling overhead.
-*   **Data Validation:** `pydantic` handles rigorous schema enforcement across all LLM tool calls and state transitions.
 *   **CLI & UX:** Built with `click` and `rich`, delivering gorgeous, beautifully formatted terminal output and logs.
 *   **HTTP & Connectors:** Designed around `httpx` and `aiohttp` for hyper-fast, asynchronous API integration with LLM providers and MCP servers.
 
@@ -300,13 +305,23 @@ This project was heavily inspired by and built with help from the following incr
 
 ## 🤝 Contributing
 
-We are building the future of asynchronous development. We'd love your help.
+We are building the future of autonomous development. We'd love your help.
 
-1. Fork the repo.
-2. `pip install -e ".[dev]"`
-3. Add a feature, write tests (`pytest tests/ -v`), and submit a PR.
+1. Fork the repo
+2. Create a branch: `git checkout -b feat/my-feature`
+3. Install: `pip install -e ".[dev]"`
+4. Write code + tests → `pytest tests/ -v`
+5. Submit a PR
 
-See our [CONTRIBUTING.md](CONTRIBUTING.md) for full details.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
+
+---
+
+## 💬 Community
+
+- **[Discord](https://discord.gg/openkairos)** — chat, questions, show your setup
+- **[GitHub Discussions](https://github.com/prabhkesar123/openkairos/discussions)** — proposals & ideas
+- **[Issues](https://github.com/prabhkesar123/openkairos/issues)** — bugs & feature requests
 
 ---
 
@@ -315,6 +330,6 @@ See our [CONTRIBUTING.md](CONTRIBUTING.md) for full details.
 ### 🌑 Join the Autonomous Revolution
 
 If you believe the future of coding is collaborative AI that works while you sleep...<br/>
-**Please consider leaving a ⭐ [Star on GitHub](https://github.com/openkairos/openkairos) to support the project!**
+**Please consider leaving a ⭐ [Star on GitHub](https://github.com/prabhkesar123/openkairos) to support the project!**
 
 </div>
