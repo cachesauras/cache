@@ -330,18 +330,46 @@ OpenKairos excels in scenarios where long-term observation, technical rigor, and
 
 ---
 
-## ⚔️ OpenKairos vs OpenCrawl (OpenClaw)
+## 🦞 + 😈 OpenClaw & OpenKairos — Better Together
 
-While **OpenCrawl** (often referred to as OpenClaw) shines as an exceptional tool for rapid, linear codebase indexing and brute-force task execution (like a highly-focused search engine bot), **OpenKairos** is orchestrated for *stateful, continuous observation* and complete autonomy.
+OpenClaw is incredible for on-demand tasks. OpenKairos runs in the background while you sleep.
+They don't compete — they cover different parts of your workflow.
 
-Here is a detailed comparative breakdown:
+| When to use | OpenClaw 🦞 | OpenKairos 😈 |
+|-------------|-------------|---------------|
+| You need something done **now** | ✅ | — |
+| You want your repo **watched 24/7** | — | ✅ |
+| On-demand refactor across 50 files | ✅ | — |
+| Catch a vuln **before you commit** | — | ✅ |
+| Fast one-shot task | ✅ | — |
+| Morning briefing while you slept | — | ✅ |
 
-| Feature Dimension | OpenCrawl (OpenClaw) 🦅 | OpenKairos 😈 |
-| :--- | :--- | :--- |
-| **Execution Paradigm** | **Synchronous / Reactive:** Fire-and-forget utility. You point it at an issue and it halts upon completion. | **Asynchronous / Proactive:** Living daemon. Sets up permanent residence, looping endlessly and evaluating independently. |
-| **State & Memory** | **Index-Based Ephemeral:** Relies on fast semantic indexing for instantaneous actions without deep historical context. | **Tri-Layer Biological:** Short-term vector logs, long-term conceptual topic files, and continuous *AutoDream* distillation. |
-| **Initiation Vector** | **Human Prompt Trigger:** Requires manual command line invocation by a developer knowing what requires fixing. | **Continuous Watcher:** Discovers architectural drift, writes code, or flags logic errors proactively before you realize they exist. |
-| **Ideal Persona** | **The Tactician:** Rapidly indexing a brand new codebase, executing a brutal one-off refactor across 50 files. | **The Architect:** A persistent co-maintainer mapping the meta-layer of your repository's evolution over months. |
+> 💡 **Recommended setup:** Run OpenClaw for tasks you assign.
+> Let OpenKairos watch everything else.
+
+
+# Use OpenClaw when you have a job
+openclaw "refactor auth module"
+
+# OpenKairos runs underneath, always watching
+kairos watch
+
+
+---
+
+## Why This Gets You Stars From OpenClaw Users
+
+Three reasons this works:
+
+**1. Post in OpenClaw's Discord/discussions** — frame it as "built a daemon companion for OpenClaw users." That community is 364k stars worth of engaged developers who already care about AI coding tools. They're your exact audience.
+
+**2. Tag OpenClaw in your Show HN / Reddit post** — something like *"Built an always-on background daemon that pairs with OpenClaw"* gets their community clicking.
+
+**3. Open a GitHub Discussion on OpenClaw's repo** — not an issue, a discussion. Ask if anyone's interested in a persistent daemon companion. Don't spam, just genuinely engage. One post there can drive hundreds of stars.
+
+---
+
+The key mindset shift: **OpenClaw users are your best potential stargazers**, not your competition. Make them feel like OpenKairos completes their setup, not replaces it.
 
 ---
 
