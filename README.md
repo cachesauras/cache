@@ -74,25 +74,6 @@ kairos watch
 
 ---
 
-## 📲 Live — Real Telegram Output
-
-<p align="center">
-  <img src="tele_5.jpeg" width="320"/>
-</p>
-
-> Full notification history — TODOs detected at 2AM, SQL injection flagged, tests running, morning briefing delivered. Zero prompts.
-
-<p align="center">
-  <img src="tele_3.jpeg" width="260"/>
-  <img src="tele_2.jpeg" width="260"/>
-</p>
-
-<p align="center">
-  <img src="tele_1.jpeg" width="240"/>
-  <img src="tele_4.jpeg" width="240"/>
-</p>
-
----
 
 ## 🎯 Starter Use Cases (Try This First)
 
@@ -113,7 +94,7 @@ kairos watch
 
 
 ---
-```
+
 ## 📲 Live Telegram Notifications (Real Output)
 
 > Below is unedited output from a real run.
@@ -172,7 +153,8 @@ kairos watch
 > No prompts  
 > No manual checks  
 > Just continuous awareness
-```
+
+---
 
 ## 📡 Deep Audit & GitHub Webhooks
 
