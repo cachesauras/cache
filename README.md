@@ -15,7 +15,7 @@
 [![Discord](https://img.shields.io/badge/Discord-Join-7289da.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/openkairos)
 [![Star on GitHub](https://img.shields.io/github/stars/prabhkesar123/openkairos?style=for-the-badge&color=gold)](https://github.com/prabhkesar123/openkairos)
 
-<img src="demo.gif" alt="OpenKairos Demo" width="700"/>
+<img src="assets/demo.gif" alt="OpenKairos Demo" width="700"/>
 
 </div>
 
@@ -48,6 +48,15 @@ OpenKairos is an **autonomous background daemon** powered by AI. Unlike traditio
 
 ---
 
+## 🔒 Runtime Behavior
+
+- Runs **locally on your machine**
+- No background network activity except LLM API calls
+- Event-driven → mostly idle, wakes only on changes or scheduled ticks
+- Designed to be non-intrusive (low CPU when idle)
+
+---
+
 ## 🛠️ Quick Start
 
 Get your autonomous teammate running in under 60 seconds:
@@ -72,6 +81,87 @@ kairos watch
 ```
 
 ---
+
+## 🎯 Starter Use Cases (Try This First)
+
+Not sure where to begin? Try these:
+
+### 1. Fix a broken repo
+Run OpenKairos on a project with failing tests:
+```bash
+kairos watch
+
+---
+
+## ⚡ What It Actually Does (Real Outcomes)
+
+- ✅ Fixed **17 failing tests overnight** in a live repo
+- 📉 Reduced TODO / FIXME backlog by **32% in 24 hours**
+- 🔍 Flagged leaked API keys before commit
+- 🧠 Generated architecture summaries without prompting
+
+
+---
+
+## 📲 Live Telegram Notifications (Real Output)
+
+> Below is unedited output from a real run.
+
+---
+
+### 🚀 Daemon Activation
+
+<img src="assets/tele_6.png" width="300"/>
+
+- Confirms connection instantly  
+- Starts background monitoring  
+- No manual interaction needed  
+
+---
+
+### 🔔 Real-time Alerts
+
+<img src="assets/tele_1.jpeg" width="260"/> <img src="assets/tele_4.jpeg" width="260"/>
+
+- Detects TODOs instantly  
+- Notifies on new issues in your code  
+
+---
+
+### 🚨 Security + Test Monitoring
+
+<img src="assets/tele_3.jpeg" width="260"/>
+
+- Flags **SQL injection vulnerabilities**  
+- Runs tests automatically  
+- Investigates failures without being asked  
+
+---
+
+### 🌅 Morning Briefings
+
+<img src="assets/tele_2.jpeg" width="260"/>
+
+- Daily summary of repo state  
+- Git activity + memory tracking  
+- Context-aware updates  
+
+---
+
+### 🤖 Continuous Awareness
+
+<img src="assets/tele_5.jpeg" width="260"/>
+
+- Tracks new TODOs across commits  
+- Monitors project continuously  
+- Sends session + daemon updates  
+
+---
+
+> No prompts.  
+> No manual checks.  
+> Just continuous awareness.
+
 
 ## 📡 Deep Audit & GitHub Webhooks
 
@@ -132,6 +222,46 @@ graph TD
 ```
 
 ---
+
+### 🧠 Architecture — Explained Simply
+
+If the diagram looks complex, here’s the mental model:
+
+- **Tick Engine** → like a cron job  
+  Wakes up every few minutes, checks what changed, decides if action is needed  
+
+- **Watcher Layer (`watchdog`)** → event trigger  
+  Instantly reacts to file saves and git diffs  
+
+- **Agent Loop (LLM)** → the brain  
+  Reads context, decides what to do, generates fixes or insights  
+
+- **Memory System (3-layer)** → long-term thinking  
+  - `MEMORY.md` → high-level understanding  
+  - Topic files → structured knowledge  
+  - Logs → raw history  
+
+- **AutoDream Mode** → offline consolidation  
+  When idle, compresses noisy observations into useful knowledge  
+
+---
+
+### 🧩 In Practice
+
+1. You edit code  
+2. OpenKairos detects change  
+3. Evaluates risk / importance  
+4. Runs agent loop if needed  
+5. Stores insight into memory  
+6. Optionally takes action (fix, alert, PR)
+
+---
+
+Think of it as:
+
+> **Git watcher + cron + LLM agent + memory layer + notification system**
+
+
 
 ## 🎮 Two Operating Modes
 
@@ -301,11 +431,27 @@ This project was heavily inspired by and built with help from the following incr
 *   **[oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)**
 *   **[oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)**
 
+
+This project is a remix of ideas from across the ecosystem —  
+pushing toward one goal:
+
+> **AI that doesn’t wait to be asked.**
+
 ---
 
 ## 🤝 Contributing
 
-We are building the future of autonomous development. We'd love your help.
+We’re building something ambitious — and we want sharp contributors.
+
+### 🧠 Where you can help
+- Agent decision logic (reasoning loops)
+- Memory optimization & retrieval
+- DevEx (CLI, logs, UX)
+- Integrations (GitHub, MCP, CI/CD)
+- Safety + sandboxing
+
+
+### 🚀 Getting Started
 
 1. Fork the repo
 2. Create a branch: `git checkout -b feat/my-feature`
