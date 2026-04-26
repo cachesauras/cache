@@ -194,6 +194,9 @@ OpenKairos is engineered for stability, asynchronous execution, and persistent m
 
 ### How It Works
 
+### How It Works
+
+```mermaid
 graph TD
 
     subgraph Tick_Engine
