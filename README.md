@@ -223,7 +223,7 @@ graph TD
     E -.-> L
     K -.-> M
 
-
+```
 ---
 
 ### 🧠 Architecture — Explained Simply
