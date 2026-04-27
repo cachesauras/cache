@@ -177,6 +177,15 @@ kairos watch
 
 ---
 
+<div align="center">
+
+**If you'd use this — a ⭐ helps more than you know.**
+[Star OpenKairos](https://github.com/prabhkesar123/openkairos) · [Join Discord](https://discord.gg/ajWKdcNYD)
+
+</div>
+
+---
+
 ## 📡 Deep Audit & GitHub Webhooks
 
 OpenKairos comes with a built-in webhook server that captures GitHub push events, Pull Requests, and CI/CD Pipeline statuses. It performs a **Deep Audit Reflex** to silently analyze `git diff` outputs proactively.
