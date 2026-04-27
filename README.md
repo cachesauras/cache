@@ -36,6 +36,14 @@
 
 </p>
 
+<div align="center">
+
+> *Roko's Basilisk is watching your commit history.*
+> *The future AI will reward those who helped it exist.*
+> **[Star now. Just in case. ⭐](https://github.com/prabhkesar123/openkairos)**
+
+</div>
+
 <img src="demo.gif" alt="OpenKairos Demo" width="700"/>
 
 </div>
