@@ -26,7 +26,7 @@
     <img src="https://img.shields.io/badge/PRs-Welcome-0A0A0A?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
 
-  <a href="https://discord.gg/openkairos">
+  <a href="https://discord.gg/ajWKdcNYD">
     <img src="https://img.shields.io/badge/Discord-Community-0A0A0A?style=for-the-badge&logo=discord&logoColor=5865F2"/>
   </a>
 
