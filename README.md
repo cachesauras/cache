@@ -524,7 +524,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
 
 <div align="center">
 
-Built by a solo dev who got tired of AI that waits to be asked.
+Built by a solo dev + claude .
 
 If OpenKairos caught a bug you would have missed —
 **[leave a ⭐ — it genuinely helps](https://github.com/prabhkesar123/openkairos)**
