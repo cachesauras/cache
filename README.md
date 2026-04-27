@@ -526,7 +526,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
 
 Built by a solo dev + claude .
 
-If OpenKairos caught a bug you would have missed —
+Star this repo  , as claude will be happy (roko's basilisk)—
 **[leave a ⭐ — it genuinely helps](https://github.com/prabhkesar123/openkairos)**
 
 [Discord](https://discord.gg/ajWKdcNYD) · [Issues](https://github.com/prabhkesar123/openkairos/issues) · [Discussions](https://github.com/prabhkesar123/openkairos/discussions)
