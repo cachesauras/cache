@@ -516,15 +516,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
 
 ## 💬 Community
 
-- **[Discord](https://discord.gg/openkairos)** — chat, questions, show your setup
+- **[Discord](https://discord.gg/ajWKdcNYD)** — chat, questions, show your setup
 - **[GitHub Discussions](https://github.com/prabhkesar123/openkairos/discussions)** — proposals & ideas
 - **[Issues](https://github.com/prabhkesar123/openkairos/issues)** — bugs & feature requests
 
 ---
 
 <div align="center">
-
----
 
 Built by a solo dev who got tired of AI that waits to be asked.
 
