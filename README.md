@@ -108,12 +108,12 @@ kairos watch
 ## 🎯 Starter Use Cases (Try This First)
 
 Not sure where to begin? Try these:
-
+```bash
 ### 1. Fix a broken repo
 Run OpenKairos on a project with failing tests:
 
 kairos watch
-
+```
 ---
 
 ## ⚡ What It Actually Does (Real Outcomes)
@@ -387,11 +387,13 @@ They don't compete — they cover different parts of your workflow.
 > Let OpenKairos watch everything else.
 
 
+```bash
 # Use OpenClaw when you have a job
 openclaw "refactor auth module"
 
 # OpenKairos runs underneath, always watching
 kairos watch
+```
 
 
 ---
