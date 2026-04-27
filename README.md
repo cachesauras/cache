@@ -524,9 +524,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
 
 <div align="center">
 
-### 🌑 Join the Autonomous Revolution
+---
 
-If you believe the future of coding is collaborative AI that works while you sleep...<br/>
-**Please consider leaving a ⭐ [Star on GitHub](https://github.com/prabhkesar123/openkairos) to support the project!**
+Built by a solo dev who got tired of AI that waits to be asked.
+
+If OpenKairos caught a bug you would have missed —
+**[leave a ⭐ — it genuinely helps](https://github.com/prabhkesar123/openkairos)**
+
+[Discord](https://discord.gg/ajWKdcNYD) · [Issues](https://github.com/prabhkesar123/openkairos/issues) · [Discussions](https://github.com/prabhkesar123/openkairos/discussions)
 
 </div>
