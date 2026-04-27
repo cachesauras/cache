@@ -6,7 +6,7 @@
 
 **The Autonomous AI Daemon That Never Sleeps.**
 
-*An open-source, model-agnostic implementation of Anthropic's unreleased KAIROS architecture, discovered in the Claude Code source leak.*
+*An open-source, model-agnostic implementation of Anthropic's unreleased KAIROS architecture, discovered in the "c c" source leak.*
 
 <p align="center">
 
