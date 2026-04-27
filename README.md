@@ -83,7 +83,7 @@ OpenKairos is an **autonomous background daemon** powered by AI. Unlike traditio
 
 Get your autonomous teammate running in under 60 seconds:
 
-``
+```bash
 # 1. Install from GitHub
 pip install git+https://github.com/prabhkesar123/openkairos.git
 
@@ -92,6 +92,7 @@ export ANTHROPIC_API_KEY="sk-..."
 
 # 3. Start the daemon in your project directory
 kairos watch
+```
 
 
 *Or install from source for development:*
