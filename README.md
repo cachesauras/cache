@@ -395,22 +395,6 @@ kairos watch
 
 ---
 
-## Why This Gets You Stars From OpenClaw Users
-
-Three reasons this works:
-
-**1. Post in OpenClaw's Discord/discussions** — frame it as "built a daemon companion for OpenClaw users." That community is 364k stars worth of engaged developers who already care about AI coding tools. They're your exact audience.
-
-**2. Tag OpenClaw in your Show HN / Reddit post** — something like *"Built an always-on background daemon that pairs with OpenClaw"* gets their community clicking.
-
-**3. Open a GitHub Discussion on OpenClaw's repo** — not an issue, a discussion. Ask if anyone's interested in a persistent daemon companion. Don't spam, just genuinely engage. One post there can drive hundreds of stars.
-
----
-
-The key mindset shift: **OpenClaw users are your best potential stargazers**, not your competition. Make them feel like OpenKairos completes their setup, not replaces it.
-
----
-
 ## 🔌 MCP Integration — Autonomous by Design
 
 OpenKairos integrates natively with the Model Context Protocol (MCP), allowing it to connect seamlessly to external systems like calendars, email, CI pipelines, and cloud infra.
