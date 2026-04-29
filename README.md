@@ -477,6 +477,7 @@ This project was heavily inspired by and built with help from the following incr
 *   **[oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)**
 *   **[oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)**
 
+**prabhkesart is the author.**
 
 This project is a remix of ideas from across the ecosystem —  
 pushing toward one goal:
